@@ -190,29 +190,71 @@
 
 // hash.display()
 
-class hashTable{
-    constructor(size){
-        this.size = size
-        this.table = new Array(size).fill(null)
+// class hashTable{
+//     constructor(size){
+//         this.size = size
+//         this.table = new Array(size).fill(null)
+//     }
+
+//     hashFunction(key){
+//         return key % this.size
+//     }
+
+//     addkey(key){
+//         const index = this.hashFunction(key)
+//         this.table[index] = key
+//     }
+
+//     display(){
+//        this.table.forEach((item, index)=>{
+//         console.log(`${item}:${index}`);
+//        })
+//     }
+// }
+// const list = new hashTable(5)
+// list.addkey(91)
+// list.addkey(70)
+// list.display()
+
+
+// resolving collision using closed hashing
+
+class HashTable {
+    constructor(size) {
+        this.size = size;
+        this.table = new Array(size).fill(null);
+        console.log(this.table);
     }
 
-    hashFunction(key){
-        return key % this.size
+    hashFun(key) {
+        return key % this.size;
     }
 
-    addkey(key){
-        const index = this.hashFunction(key)
-        this.table[index] = key
+    add(key) {
+        const index = this.hashFun(key);
+        for (let i = 0; i < this.size; i++) {
+            const newIndex = (index + i) % this.size;
+            if (this.table[newIndex] === null) {
+                this.table[newIndex] = key;
+                return;
+            }
+        }
     }
 
-    display(){
-       this.table.forEach((item, index)=>{
-        console.log(`${item}:${index}`);
-       })
+    display() {
+        console.log("Key-value pairs:");
+        this.table.forEach((value, index) => {
+            console.log(`${index}: ${value}`);
+        });
     }
 }
-const list = new hashTable(5)
-list.addkey(91)
-list.addkey(70)
-list.display()
 
+// Usage
+const list = new HashTable(10);
+list.add(12);
+list.add(22);
+list.add(38);
+list.add(41);
+list.add(48);
+
+list.display();

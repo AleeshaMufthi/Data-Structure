@@ -431,8 +431,108 @@
 // console.log(ans)
 
 
+// 2455
 
-"C:\Users\hp\OneDrive\Documents\Data Structure"
+// let nums = [94,65,82,40,79,74,92,84,37,19,16,85,20,79,25,89,55,67,84,3,79,38,16,44,2,54,58,94,69,71,14,24,13,21]
+
+// let evenThree = []
+// let avg = 0
+// let sum = 0
+
+// for(let i=0; i<nums.length; i++){
+//     if(nums[i]%2 == 0 && nums[i]%3 == 0){
+//        evenThree.push(nums[i])
+//     }
+// }
+// console.log(evenThree)
+// for(let j=0; j<evenThree.length; j++){
+//     sum = sum += evenThree[j]
+//  }
+// console.log(sum);
+
+// if(evenThree.length > 0){
+//     avg = sum/evenThree.length 
+// }
+
+// console.log(Math.floor(avg))
+
+// 1979 - find the greatest common divisor
+// const nums = [3]
+
+// let min = Math.min(...nums)
+// let max = Math.max(...nums)
+
+// while(min !== 0){
+//     let temp = min
+//     min = max % min
+//     max = temp
+// }
+// console.log(max)
+
+// 657 - Robot return to origin
+// let moves = "LDRRLRUULR"
+
+// let vertical = 09
+// let horizontal = 0
+
+// for(let i=0; i<moves.length; i++){
+//     if(moves[i] == "U"){
+//         vertical++
+//     }else if(moves[i] == "D"){
+//         vertical--
+//     }else if(moves[i] == "L"){
+//         horizontal++
+//     }else if(moves[i] == "R"){
+//         horizontal--
+//     }
+// }
+
+// if(vertical == 0 && horizontal == 0){
+//     console.log("true")
+// }else{
+//     console.log("false")
+// }
+
+
+
+// 1108 - Defanging an IP address
+
+// let address = "255.100.50.0"
+
+// let addresses = address.split("")
+
+// for(let i=0; i<addresses.length; i++){
+//     if(addresses[i] == "."){
+//         addresses[i] = "[.]"
+//     }
+// }
+// console.log(addresses.join(""))
+
+
+
+// 2833 - furthest point from origin
+
+// let moves = "L_RL__R"
+
+// let move = moves.split("")
+
+// let origin1 = 0
+// let origin2 = 0
+
+// for(let i=0; i<move.length; i++){
+//     if(move[i] == "R"){
+//         origin1++
+//     }else if(move[i] == "L"){
+//         origin1--
+//     }else if(move[i] == "_"){
+//         origin2++
+//     }
+// }
+
+// console.log(origin1)
+// console.log(origin2)
+
+// console.log(Math.abs(origin1) + origin2)
 
 
 

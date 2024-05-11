@@ -130,12 +130,6 @@
 // }
 // console.log(`value ${searchNo} is at the index ${index}`);
 
-// 5.SORTING
-const arr = [4,1,9,2,0,8,3,5,7,10]
-
-
-
-
 
 // 2D Array
 // const twoDarr = [

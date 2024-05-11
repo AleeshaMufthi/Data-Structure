@@ -1,5 +1,5 @@
 
-// isPalindrome
+// =================== isPalindrome
 
 function isPalindrome(str) {
     // Base case: if the length of the string is 0 or 1, it's a palindrome
@@ -18,6 +18,19 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("radar")); // Output: true
 console.log(isPalindrome("hello")); // Output: false
+
+
+// ============== find the multiple of number using recursion
+
+// function multiples(n, i = 1) {
+//     if (i > 10) {
+//         return;
+//     }
+//     console.log(n * i);
+//     multiples(n, i + 1);
+// }
+// multiples(2);
+
 
 
 

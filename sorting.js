@@ -1,6 +1,4 @@
-
-
-// Selection sort - find the smallest and put it into front
+// ==============Selection sort - find the smallest and put it into front
 
 // const arr = [9, 5, 2, 7, 1, 8, 4, 6, 3]
 // for(let i=0; i<arr.length; i++){
@@ -20,7 +18,7 @@
 
 
 
-// Quick sort
+// ======================  Quick sort
 
 // const arr=[10, 2, 4, 1, 1, 5, 7, 6]
 // console.log(quickSort(arr));
@@ -47,7 +45,7 @@
 // }
 
 
-// Merge sort
+// =========================== Merge sort
 
 // const arr = [9, 5, 2, 7, 1, 8, 4, 6, 3];
 // console.log(mergeSort(arr));
@@ -84,17 +82,6 @@
 
 
 
-// find the multiple of number using recursion
-// function multiples(n, i = 1) {
-//     if (i > 10) {
-//         return;
-//     }
-//     console.log(n * i);
-//     multiples(n, i + 1);
-// }
-// multiples(2);
-
-
 
 //---------------------------------- Bubble sort using array
 // const arr = [3,9,5,8,6,1,7,2,0]
@@ -123,6 +110,11 @@
 //     arr[j+1] = current
 // }
 // console.log(arr);
+
+
+
+
+
 
 
 
